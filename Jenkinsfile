@@ -1,5 +1,5 @@
 pipeline {
-    agent {label 'docker'}
+    agent {label 'ansible'}
 
     environment{
         DOCKERHUB_CREDENTIALS= credentials('dockerhub-credentials')
