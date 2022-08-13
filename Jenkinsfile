@@ -11,7 +11,7 @@ pipeline {
             }
         }
 
-        stage(''){
+        stage('execute playbook'){
             steps{
                 ansiblePlaybook become: true, credentialsId: 'vagrant', 
                 disableHostKeyChecking: true, installation: 'ansible', 
