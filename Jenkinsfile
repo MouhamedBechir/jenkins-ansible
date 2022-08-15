@@ -19,6 +19,13 @@ pipeline {
             }
         }
     }
+    post{
+        failure{
+            emailext body: 'go solve the problem please', 
+            subject: 'Error in the pipeline ', 
+            to: 'kraiemmouhamedalbechir@gmail.com'
+        }
+    }
         
     }
 
