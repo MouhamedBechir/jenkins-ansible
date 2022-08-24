@@ -1,9 +1,7 @@
 pipeline {
     agent {label 'ansible'}
 
-    environment{
-        DOCKERHUB_CREDENTIALS= credentials('dockerhub-credentials')
-    }
+   
     stages{
         stage('checkout github repository'){
             steps{
